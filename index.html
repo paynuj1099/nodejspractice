@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS-REACT-EXPRESS</title>
+
+    <!-- CSS -->
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="./src/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">ORDER MANAGEMENT</h2>
+
+        <!-- Table for displaying orders -->
+        <div class="table-responsive">
+            <table id="orderTable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Quantity</th>
+                        <th>Message</th>
+                        <th>City</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+         </div>
+    </div>
+
+    <!-- Input fields for adding new order -->
+    <div class="container mt-4">
+        <form class="row g-3 needs-validation" id="formAdd" novalidate>
+            <div class="col-md-4 position-relative" style="margin-top: 40px;">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="orderTitle" placeholder="Title" required>
+                    <label for="orderTitle">Title</label>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                    <div class="invalid-tooltip">
+                        Please provide a valid Title.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 position-relative" style="margin-top: 40px;">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="orderQty" placeholder="Quantity" required>
+                    <label for="orderQty">Quantity</label>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                    <div class="invalid-tooltip">
+                        Please provide a valid Quantity.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 position-relative" style="margin-top: 40px;">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="orderMessage" placeholder="Message" required>
+                    <label for="orderMessage">Message</label>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                    <div class="invalid-tooltip">
+                        Please input a Message.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 position-relative" style="margin-top: 40px;">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="orderCity" placeholder="City" required>
+                    <label for="orderCity">City</label>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                    <div class="invalid-tooltip">
+                        Please provide a valid City.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="margin-top: 40px;">
+                <button class="btn btn-primary" type="submit" id="btnSubmitAddNewOrder"><i class="fa fa-plus"></i> Add New Order</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <!-- Scripts -->
+    <script src="./src/js/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/jquery.dataTables.min.js"></script>
+    <script src="./src/js/sweetalert.js"></script>
+    <script src="./src/js/all.js"></script>
+    <script src="./src/js/functionsForIndex.js"></script>
+
+</body>
+</html>
