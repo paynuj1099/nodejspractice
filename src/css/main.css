@@ -1,0 +1,38 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway'); */
+body {
+    font-family: 'Century Gothic', sans-serif !important; 
+    color: black !important;
+}
+.table-bordered {
+    border: 1px solid #dee2e6 !important;
+}
+.dataTables_filter input {
+    margin-bottom: 12px;
+}
+
+body.light-mode {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+.form-check-label.dark-mode {
+    color: #ffffff !important;
+}
+
+/* Additional styles for inputs and table */
+.form-control.light-mode {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #ced4da !important;
+}
+
+.form-control.dark-mode {
+    background-color: #2c2c2c !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+}

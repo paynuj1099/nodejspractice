@@ -1,7 +1,7 @@
 const config = {
-    user: 'MapOnlineAdmin',
-    password: 'Admin4MapOnline',
-    server: '10.27.35.234', // standard to use hostname instead of IP Add 
+    user: 'test',
+    password: 'test',
+    server: '172.26.220.202', // standard to use hostname instead of IP Add 10.27.35.234
     database: 'PracticeAPI',
     options:{
         trustServerCertificate: true,
